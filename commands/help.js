@@ -43,27 +43,8 @@ cmdd.forEach(cmd => {
           
         console.log(cmd);
                 userEmbed.addField(cmd, dsc, true);
-              ownerEmbed.addField(cmd, dsc, true)
-          if (ownerownly) return;
-              ownerEmbed.addField(cmd, dsc, true);
       });
-         if (!ids.includes(message.author.id)) return:
-      message.channel.send(ownerEmbed);
-      else;
       message.channel.send(userEmbed);
         }); }
 }
 };
-
-//══════════════HELP═══════════════
-//⑀⑀⑀⑀⑀⑀⑀⑀⑀⑀⑀⑀⑀⑀⑀⑀⑀⑀⑀HELP⑀⑀⑀⑀⑀⑀⑀⑀⑀⑀⑀⑀⑀⑀⑀⑀⑀⑀⑀⑀⑀
-// turn of inline
-// ^bruh it'll fill up the whole screen when we get more commands if it isnt inline
-//ok 
-// ‎
-// Btw whats ur github username
-// Same as glitch BrAnDgRaNdReAl
-// ok also im adding eval/
-// btw 
-// When you make commands
-// press the 3 dots next to cmdtemplate and press duplicate
