@@ -1,5 +1,6 @@
   var ids = ['465564943065022475', '531186390717825074'];
 module.exports = {
+  catagory: 'bot',
   name: 'about',
   description: 'Get Info About The Bot!',
   execute: async (message, args, client, db, packageInfo, Discord) => {

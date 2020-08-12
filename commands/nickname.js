@@ -3,6 +3,7 @@ const customisation = require('../customisation.json');
 const fs = require("fs");
 const ms = require("ms");
 module.exports = {
+  catagory: 'mod',
   name: 'nickname',
   description: 'nickname the mentioned user.',
   usage: 'nickname @user|userID newname',

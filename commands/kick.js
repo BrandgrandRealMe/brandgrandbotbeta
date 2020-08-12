@@ -1,4 +1,5 @@
 module.exports = {
+  catagory: 'mod',
   name: 'kick',
   description: 'Kick someone.',
   execute: async(message, args, client, packageInfo, Discord) => {

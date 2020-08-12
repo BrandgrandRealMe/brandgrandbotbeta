@@ -1,6 +1,7 @@
 var ids = ['465564943065022475', '531186390717825074'];
 const customisation = require('../customisation.json');
 module.exports = {
+  catagory: 'mod',
   name: 'announce',
   description: 'announce something.',
   usage: 'announce <announcement>',

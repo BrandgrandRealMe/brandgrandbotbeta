@@ -6,6 +6,7 @@
     return days + (days == 1 ? " day" : " days") + " ago";
 };
 module.exports = {
+  catagory: 'util',
   name: 'serverinfo',
   description: 'Get the servers info!',
   usage: 'serverinfo',

@@ -1,5 +1,6 @@
 const customisation = require('../customisation.json');
 module.exports = {
+  catagory: 'bot',
   name: 'suggest',
   description: 'Suggests something.',
   usage: 'suggest <suggestion>',

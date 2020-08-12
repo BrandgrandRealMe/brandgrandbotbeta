@@ -1,6 +1,7 @@
 var ids = ['465564943065022475', '531186390717825074'];
 const dadjoke = require('../data/dadjoke.json');
 module.exports = {
+  catagory: 'fun',
   name: 'dadjoke',
   description: 'Get a dadjoke!',
   usage: 'dadjoke',

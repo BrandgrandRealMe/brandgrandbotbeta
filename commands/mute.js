@@ -1,5 +1,6 @@
 var ids = ['465564943065022475', '531186390717825074'];
 module.exports = {
+  catagory: 'mod',
   name: 'mute',
   description: 'Mute Someone',
   usage: 'mute <@ping>',

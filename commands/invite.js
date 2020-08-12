@@ -1,4 +1,5 @@
 module.exports = {
+    catagory: 'bot',
     name: 'invite',
     description: "DMs you the bot\'s invite link.",
      execute: async(message, args, client) => {

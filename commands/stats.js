@@ -4,8 +4,9 @@ const fs = require('fs');
 const customisation = require('../customisation.json');
 const osutils = require('os-utils');
 const version = require('../package.json')
-const ver = " VER 2.0"
+const ver = " VER 1.0"
 module.exports = {
+  catagory: 'bot',
   name: 'stats',
   description: 'get the bots stats',
   execute: async (message, args, client, db, packageInfo, Discord, ver) => {

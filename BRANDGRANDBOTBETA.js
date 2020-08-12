@@ -11,7 +11,7 @@ const https = require('https');
 const express = require('express');
 const app = express();
 const owner = "531186390717825074";
-const client = new Discord.Client({ ws: { intents: 32767 } });
+const client = new Discord.Client
 const ver = "Beta 2.0.0";
 module.exports.client = client;
 
@@ -39,7 +39,7 @@ for (const file of commandFolder) {
 
 client.once('ready', () => {
 	console.log('Ready!');
-client.user.setActivity(`${client.guilds.cache.size} servers! | /help`, { type: 'WATCHING' });
+client.user.setActivity(`${client.guilds.cache.size} servers! | !help`, { type: 'WATCHING' });
 });
 client.on('message', message => {       
 	const args = message.content.slice(prefix.length).split(/ +/);
@@ -95,10 +95,12 @@ if (!message.member.hasPermission('ADMINISTRATOR') && message.author.id !== '465
 		message.reply('there was an error trying to execute that command!');
 	}
 });
-
-app.get('/', (req, res) => {
-    res.sendStatus(200);
+app.use(express.static("website/public"));
+app.get("/", (request, response) => {
+  response.sendFile(__dirname + "/website/pages/home.html");
 });
-
+app.get("/commands", (request, response) => {
+  response.sendFile(__dirname + "/website/pages/commands.html");
+});
 app.listen(3000, () => console.log('Online!'));
 client.login(token);
